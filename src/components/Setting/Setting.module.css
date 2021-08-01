@@ -1,0 +1,27 @@
+.mainDiv{
+    margin-bottom: 60px;
+}
+.header{
+    width: 100%;
+    padding: 5px 5px 5px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header > h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1.36rem;
+}
+.formDiv{
+    padding: 10px 10px;
+}
+.formDiv > form > button{
+    font-size: 18px;
+    padding: 0px 20px;
+}
+.button{
+    background-color: #ffad60;
+    color: white;
+}

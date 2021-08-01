@@ -1,0 +1,361 @@
+.profileMain{
+    margin-top: 40px;
+}
+.header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+}
+.header > div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.header > div:nth-child(1) > h5{
+    display: inline-block;
+    margin: 0px 10px 3px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+.settingDiv{
+    border: 1px solid #ccc;
+    position: absolute;
+    transition: 0.3s ease-out;
+    transform: translateX(250px);
+    right: 30px;
+    background-color: white;
+    top: 0;
+    display: block;
+    width: max-content;
+    transform:translateX(260px);
+    box-shadow: 1px 1px 18px -10px;
+}
+.settingDiv > div > a{
+    padding: 5px 10px 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.settingDiv > div > a:active{
+    background-color: #ccc;
+    text-decoration: none;
+}
+.cover_picture_div{
+    min-width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.cover_picture_div img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.profile_picture_main{
+    min-width: 100%;
+    height : 110px;
+    position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 21px -16px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.profile_picture{
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    transform: translate(0%, -50%);
+}
+.profile_picture > div:nth-child(1){
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid white;
+    align-content: center;
+}
+.profile_picture > div:nth-child(1) > img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.profile_picture > div:nth-child(2){
+    position: absolute;
+    width: 130px;
+    left: -20%;
+    text-align: center;
+}
+.profile_picture > div:nth-child(2) > h6{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+.profile_picture > div:nth-child(2) > p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+.profile_picture_main > div:nth-child(2){
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+}
+.friends{
+    width: 120px;
+    height: 35px;
+    display: block;
+    border-radius: 50px 50px;
+    box-shadow: 2px 6px 10px -6px;
+    padding-left: 3px;
+    margin-top: 5px;
+}
+.friends > span:nth-child(1){
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.friends > span:nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+}
+.addFriend{
+    border: none;
+    outline: none;
+    width: 35px;
+    padding: 0;
+    margin-top: 3px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px -5px;
+    height: 35px;
+    float: right;
+    border-radius: 100px 100px;
+}
+.messageBtn{
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 3px;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 100px 100px;
+}
+.messageBtn:focus, .addFriend:focus{
+    border: none;
+    outline: none;
+}
+.about{
+    padding: 10px 10px 15px   ;
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 4px 21px -16px;
+}
+.about > p{
+    margin: 0px;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+.friendsList{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 95px;
+    padding: 2px 8px 2px;
+    box-shadow: 0px 4px 21px -16px;
+}
+.friendsList > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 25%;
+}
+.friendsList > div:nth-child(1) > h6 {
+    margin: 0;
+}
+.friendsList > div:nth-child(2){
+    height: 75%;
+}
+.friendsList > div:nth-child(2) > ul{
+    height: 100%;
+    width: 0;
+}
+.friendsList > div:nth-child(2) > ul > li{
+    width: 52px;
+    height: 52px;
+    margin: auto 5px auto;
+    border-radius: 100px 100px;
+    overflow: hidden;
+    box-shadow: 0px 4px 21px -16px;
+}
+.friendsList > div:nth-child(2) > ul > li > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.postMain > div{
+    /* border: 1px solid red; */
+    padding: 4px;
+}
+.postMain > div > div{
+    border: 4px solid white;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.postMain > div > div > img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.newPostButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 100px 100px;
+}
+.newPostButton > button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    border: none;
+    box-shadow: 2px 5px 16px -6px;
+    outline: none;
+    border-radius: 100px 100px;
+    /* background-color: rgb(104, 204, 250); */
+    background-color: #ffad60;
+    padding: 0;
+}
+.modalMainDiv{
+    width: 50%;
+    /* height: max-content; */
+    /* overflow: overlay; */
+    position: absolute;
+    width: 97%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)!important;
+}
+.requestModalDiv{
+    width: 100%;
+}
+.requestModalDiv>button{
+    float: right;
+    margin-left: 5px;
+    color: white;
+    border: none!important;
+    outline: none;
+    border-radius: 0;
+}
+.requestModalDiv > button:focus{
+    color: white;
+}
+.uploadProfileCover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform:translate(-55%, -50%)!important;
+}
+.uploadProfileCoverInner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.uploadProfileCoverInner > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:auto;
+    padding:10px;
+    position: relative;
+}
+.uploadProfileCoverInner > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:auto;
+    padding:10px;
+    position: relative;
+}
+.uploadFileLabel{
+    color: #007bff;
+}
+.uploadFileInput{
+    position: absolute;
+    width: 81%;
+    height: 110px;
+    bottom: 20px;
+    opacity: 0;
+}
+.removeProfileCover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform:translate(-55%, -50%)!important;
+}
+.removeProfileCoverInner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.removeProfileCoverInner > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:auto;
+    padding:10px;
+}
+.removeProfileCoverInner > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:auto;
+    padding:10px;
+}
+.friendsBtn:focus{
+    box-shadow: 0 0 0 0.2rem #ffd2a8;
+}
+.acceptButton{
+    padding: 0 15px;
+    line-height: 30px;
+    border-radius: 0;
+    font-size: 16px;
+    background-color:#ffad60;
+    color:white;
+}
+.acceptButton:focus{
+    color: white;
+    box-shadow: 0 0 0 0.2rem #ffd2a8;
+}

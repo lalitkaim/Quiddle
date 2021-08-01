@@ -1,0 +1,167 @@
+.showPostMainDiv{
+    margin-top: 44px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px 2px 5px 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.settingDiv{
+    border: 1px solid #ccc;
+    position: absolute;
+    transition: 0.3s ease-out;
+    transform: translateX(250px);
+    right: 30px;
+    background-color: white;
+    top: 0;
+    display: block;
+    width: max-content;
+    transform:translateX(260px);
+    box-shadow: 1px 1px 18px -10px;
+}
+.settingDiv > div > a{
+    padding: 5px 10px 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.settingDiv > div > a:active{
+    background-color: #ccc;
+    text-decoration: none;
+}
+.modalDialog{
+    position: absolute;
+    width: 97%;
+    left: 50%;
+    margin: 0px;
+    top: 40%;
+    transform: translate(-50%, -50%)!important;
+}
+.postUploadInput{
+    overflow: hidden;
+    width: 120px;
+    opacity: 0;
+    height: 25px;
+    position: absolute;
+    left: 0;
+}
+.uploadFileLabel{
+    color:#007bff;
+}
+.postContainer{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.postHeader{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+.postHeader > div:nth-child(1){
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.postHeader > div:nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.postHeader > div:nth-child(2) > h5{
+    margin: 0;
+}
+.postHeader > div:nth-child(2) > p{
+    margin: 0;
+}
+.postContainer > div:nth-child(2){
+    margin: 10px 10px;
+}
+.postContainer > div:nth-child(2) > p{
+    margin: 0;
+}
+.postFooter{
+    padding: 5px;
+}
+
+.progressMainDiv{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.progressMainDiv > div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    opacity: 0.4;
+}
+.progressMainDiv > div:nth-child(2){
+    margin: 0 5px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.progressMainDiv > div:nth-child(3){
+    margin: 0 5px 0;
+}
+.progressMainDiv > div:nth-child(3) > div{
+    width: 50%;
+}
+.deletePostModalDiv{
+    width: 100%;
+}
+.deletePostModalDiv > button{
+    float: right;
+    margin-left: 5px;
+    color: white;
+    border: none!important;
+    outline: none;
+    border-radius: 0;
+}
+.deletePostModalDiv > button:focus{
+    color: white;
+}
+.likePeoples{
+    height: 75%;
+}
+.likePeoples > ul{
+    height: 100%;
+    width: 0;
+}
+.likePeoples > ul > li{
+    width: 35px;
+    height: 35px;
+    margin: auto 5px auto;
+    border-radius: 100px 100px;
+    overflow: hidden;
+    box-shadow: 0px 4px 21px -16px;
+}
+.likePeoples > ul > li > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.postImageDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-content: center;
+}
+.postImage{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}

@@ -1,0 +1,221 @@
+.header{
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+.header > div:nth-child(1){
+    display: flex;
+}
+.header > h4{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    align-self: center;
+}
+.whenTyping{
+    position: absolute;
+    opacity: 0;
+    bottom: -4px;
+    left: 50%;
+    width: 75%;
+    text-align: center;
+    transform: translate(-50%,0%);
+    border-top: none;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 2px 4px 2px;
+    z-index: 500;
+}
+.whenTyping > span{
+    color: rgb(93, 185, 197);
+    font-size: 14px;
+}
+.profilePic > div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.profilePic > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chatMainDiv{
+    padding: 10px;
+    margin: 50px 0 50px;
+    /* border: 1px solid black; */
+    /* background-image: url('https://images.unsplash.com/photo-1527769929977-c341ee9f2033?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'); */
+}
+.individualMainDiv{
+    width: 100%;
+    margin: 10px 0 10px;
+}
+.leftChat{
+    max-width: 70%;
+    min-width: 0%;
+    padding: 0;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.leftChat > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 7px 15px 7px;
+    border-radius: 5px;
+    background-color: white;
+    /* border: 1px solid rgb(93, 185, 197); */
+    border:1px solid #d0d0d0;
+    box-shadow: -2px 3px 13px -8px;
+    justify-content: flex-start;
+}
+.rightChat{
+    width: 70%; 
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.rightChat > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    box-shadow: 2px 3px 13px -8px;
+    border-radius: 5px;
+    padding: 7px 15px 7px;
+    /* border: 1px solid #ffad60; */
+    background-color: #ffd5ae;
+    justify-content: flex-end;
+}
+.leftChat >div> p, .rightChat >div> p, .leftChat >div> a, .rightChat >div> a{
+    margin: 0;
+    font-size: 16px;
+    word-break: break-word!important;
+}
+.docLabel{
+    margin: 0;
+}
+.myPdfDiv{
+    min-width: 100%;
+    display: flex;
+}
+.myPdfDiv > img{
+    width: 25px;
+    height: 30px;
+}
+.myPdfDiv > a{
+    margin-left: 5px;
+    word-break: break-word;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}   
+.imgAnchor{
+    display: flex;
+}
+.imgLabel{
+    word-break: break-word;
+    max-width: 170px!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 3px;
+    background-color: white;
+    width: 100%;
+}
+.imageSendDiv{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5px;
+}
+.imageSendInput{
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    height: 24px;
+    top: 6px;
+    left: 0;
+}
+.footer > div{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+.footer > div> input{
+    border: none!important;
+}
+.footer > div > input:focus{
+    box-shadow: none;
+    border: none!important;
+}
+.sendBtn > span{
+    background-color: #ffad60;
+    border: none;
+}
+.progressMainDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.progressMainDiv > div:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    opacity: 0.4;
+}
+.progressMainDiv > div:nth-child(2){
+    position: relative;
+    top: 38%;
+    margin: 0 5px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.progressMainDiv > div:nth-child(3){
+    position: relative;
+    top: 40%;
+    margin: 0 5px 0;
+}
+.progressMainDiv > div:nth-child(3) > div{
+    width: 1%;
+}
+
+.subForTime{
+    clear: right;
+    width: max-content;
+    min-width: 50px;
+    display: inline-block;
+}
+.myFinal{
+    text-align: center;
+    margin: 0px;
+    color: black;
+    font-weight: 79px;
+    border-radius: 5px;
+    padding: 2px;
+    border : 1px solid #d0d0d0;
+    color: rgb(101,101,101);
+    background: antiquewhite;
+    box-shadow: 2px 2px 7px -5px;
+}

@@ -1,0 +1,32 @@
+.containerTop{
+    margin:20px 0 20px
+}
+.LogSignImg{
+    text-align: center;
+}
+.LogSignImg img{
+    width: 30%;
+}
+.button{
+    background-color: #ffad60;
+    color: white;
+    margin: 3px 0 5px;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.anchor{
+    color : #007bff!important;
+}
+.anchor:hover{
+    text-decoration: underline!important;
+}
+
+@media only screen and (max-height:600px){
+    .containerTop h1{
+        font-size: 2rem;
+    }
+}

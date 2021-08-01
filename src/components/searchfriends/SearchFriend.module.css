@@ -1,0 +1,75 @@
+.backward{
+    padding: 5px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+.header > div > input:focus{
+    box-shadow: none;
+    border-color: #ffad60;
+}
+.sendBtn > span{
+    background-color: #ffad60;
+    border: none;
+}
+.searchMainDiv{
+    padding-top: 0px;
+}
+.searchUsers{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.searchUsers > div:nth-child(1){
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+.searchUsers > div:nth-child(1) > div{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: center; */
+}
+.searchUsers > div:nth-child(1) > div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.searchUsers > div:nth-child(2){
+    width: auto;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 0;
+}
+.searchUsers > div:nth-child(2) >div:nth-child(1){
+    height: 100%;
+    width: auto;
+}
+.searchUsers > div:nth-child(2) >div:nth-child(1) > h5{
+    margin: 0;
+    width: max-content;
+    user-select: none;
+}
+.searchUsers > div:nth-child(2) >div:nth-child(1) > h5:active{
+    text-decoration: underline;
+}
+.searchUsers > div:nth-child(2) >div:nth-child(1) > p{
+    color: black;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}

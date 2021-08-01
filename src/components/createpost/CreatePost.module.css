@@ -1,0 +1,102 @@
+.header{
+    padding: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.header > button:focus{
+    text-decoration: none;
+}
+.header > button{
+    border: none;
+    outline: none;
+    color: #007bff;
+    background-color: transparent;
+}
+.createPostMainDiv > h5{
+    margin: 8px 8px;
+}
+.postForm{
+    margin: 5px 8px;
+}
+.postForm > div:nth-child(1){
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px -6px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.postForm > div:nth-child(1) > textarea{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+}
+.postForm > div:nth-child(1) > textarea:focus{
+    border: none;
+    outline: none;
+}
+.photoUploadDiv{
+    position: relative;
+    top:6px
+}
+.photoUploadDiv > input{
+    width: 125px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: transparent;
+    opacity: 0;
+}
+.photoUploadDiv > button{
+    position: absolute;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    background-color: transparent;
+}
+.imagePreviewDiv{
+    width: 100%;
+}
+.imagePreviewDiv > img{
+    width: 100%;
+    height: auto;
+}
+.progressMainDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.progressMainDiv > div:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    opacity: 0.4;
+}
+.progressMainDiv > div:nth-child(2){
+    position: relative;
+    top: 38%;
+    margin: 0 5px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.progressMainDiv > div:nth-child(3){
+    position: relative;
+    top: 40%;
+    margin: 0 5px 0;
+}
+.progressMainDiv > div:nth-child(3) > div{
+    width: 50%;
+}
