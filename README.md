@@ -1,4 +1,4 @@
-#Quiddle
+# Quiddle
 A web based messaging application where you can add peoples to connect with them, chat with them, send images, files, post pictures and many more. Feel free to visit @ https://the-quiddle.web.app/
 
 
